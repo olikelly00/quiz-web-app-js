@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #000;
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+}
+  
+.wrapper {
+    display: grid;
+    grid-template-rows: 4rem 1fr;
+    height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header.quiz-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header.quiz-header h1 {
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    margin: 0;
+}
+
+main.quiz-main {
+    background: #000;
+    color: #fff;
+}
+
+.screen {
+    height: 100%;
+    padding: 1rem;
+}
+
+.screen-grid {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 4rem;
+}
+
+.screen-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.base-button {
+    cursor: pointer;
+    border: 0;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 3rem;
+}
+
+.blue-button {
+    background: #2463EB;
+    color: #FFF;
+}
+
+/*
+    Question Screen
+*/
+
+form.quiz-question fieldset {
+    border: 0;
+}
+
+form.quiz-question fieldset .questionDisplay {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+form.quiz-question label {
+    background: #1C1C1C;
+    display: block;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+    line-height: 3rem;
+    font-weight: 400;
+    padding: 1rem;
+    margin: 0 0 1rem;
+}
+
+form.quiz-question label:hover {
+    cursor: pointer;
+}
+
+form.quiz-question label input[type="radio"] {
+    margin-right: 1rem;
+} 
+
+.screen-body-result-container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.screen-body-result-container p { 
+    font-size: 1rem; 
+    width: 20rem;   
+    text-align: center;
+
+
+
+} 
+
+.screen-body-result-container h3 { 
+    font-size: 1.6rem;
+}
